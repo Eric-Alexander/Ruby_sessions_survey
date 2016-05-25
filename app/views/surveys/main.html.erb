@@ -1,21 +1,31 @@
-<h1>Survey Form Entry</h1>
 
+<div class = "container">
+  <div class="jumbotron">
+<h1>Survey Form Entry</h1>
+</div>
+
+
+<div class="row">
+  <div class="col col-md-6">
 <form method="post" action='results'>
     <input name='authenticity_token' value='<%= form_authenticity_token %>' type='hidden'>
-    <h4>Your Name: <input type='text' name='name' placeholder="Name" /><br>
-    <h4> Your Location:  <select name='location' >
+    <h4>Your Name: <input type='text' name='name' placeholder="Name" class="form-control"/>
+    <h4> Your Location:  <select name='location'>
         <option value='Reykjavik'>Reykjavik</option>
         <option value='Moon'>The Moon</option>
         <option value='Seattle'>Seattle</option>
         <option value='Oslo'>Oslo</option>
     </select></h4>
-    <h4> Your Favorite Language: <select name='language' >
+    <h4> Your Favorite Language: <select name='language'>
         <option value='Javascript'>Javascript</option>
         <option value='Python'>Python</option>
         <option value='Ruby'>Ruby</option>
         <option value='PHP'>PHP</option>
-    </select></h4><br>
-    <textarea name='comment' rows='8'>Comments(optional)
-    </textarea><br>
-    <input type='submit'>
+    </select></h4>
+    <input type='textarea' name='comment' class="form-control" placeholder="Comments(optional)"/>
+    <br>
+    <input type='submit' class="btn btn-primary">
 </form>
+</div>
+</div>
+</div>
