@@ -1,0 +1,20 @@
+<h1>Survey Form Results</h1>
+
+<% if flash[:success] %>
+  <div id="success_explanation">
+    <div class="alert alert-success">
+      <%= flash[:success] %>
+    </div>
+  </div>
+<% end %>
+
+<h4>Name: <%= @results['name'] %> </h4>
+
+<h4>Location: <%= @results['location'] %> </h4>
+
+<h4>Language: <%= @results['language'] %> </h4>
+
+<h4>Comment: <%= @results['comment'] %> </h4>
+
+
+<a href='/home'>Go Back</a>
